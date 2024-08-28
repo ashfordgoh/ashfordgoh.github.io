@@ -1,6 +1,8 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f1a73e;
+    background-image: url('/Github/photos/sky.jpg');
+    background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,44 +16,53 @@ body {
     align-items: center;
     max-width: 1000px;
     padding: 20px;
+    backdrop-filter: blur(5px);
 }
 
 .image-section {
     flex: 1;
-    position: relative;
 }
 
 .profile-image {
     width: 300px;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .text-section {
     flex: 2;
     margin-left: 30px;
-    color: #ffffff;
+    position: relative;
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-color: #e91e63;
     display: inline-block;
     padding: 10px;
     margin: 0;
     border-radius: 10px;
+    color: white;
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-top: 20px;
+    color: #333;
 }
 
 .info-button {
     background-color: #000000;
     color: #ffffff;
-    padding: 15px 20px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -65,19 +76,16 @@ p {
 
 .cv-link {
     margin-top: 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .cv-link a {
-    color: #ffffff;
+    color: #333;
     text-decoration: underline;
 }
 
 .fun-fact-section {
     margin-top: 40px;
-    background-color: #ffffff;
+    padding: 10px 0;
     color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
